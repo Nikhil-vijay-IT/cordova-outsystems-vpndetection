@@ -33,7 +33,7 @@
     
     NSDictionary *dict = CFBridgingRelease(CFNetworkCopySystemProxySettings());
     NSDictionary *keys = dict[@"__SCOPED__"];
-    //NSArray *vpns = @[@"tap",@"tun",@"ppp",@"ipsec",@"utun"];
+    //NSArray *vpns = @[@"tap",@"tun",@"ppp",@"ipsec",@"utun",@"ipsec0",@"utun1",@"utun2"];
     
     for (NSString* key in keys.allKeys){
       for(NSString* vpn in vpns){
